@@ -1,0 +1,65 @@
+.body{
+  background-color: bisque;
+}
+.social{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-left: 5px;
+  color: blue ;
+}
+.title{
+  width: 50%;
+  display: inline;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(3, 30% 40% 30%);
+  gap: 10px;
+  grid-auto-rows: 100px minmax(auto);
+  grid-template-areas: 
+  "a b b c"
+  "a b b c";
+  margin: 0px;
+}
+
+.post{
+  grid-template-columns: minmax(auto);
+  width: 100%;
+  grid-area: b;
+  justify-self: start;
+}
+.btn{
+  background-color: blue;
+  color: white;
+}
+
+.hotlinks{
+  list-style: none;
+  margin: 0px;
+}
+
+.bio{
+  background-color: beige;
+}
+.friends > div{
+ grid-area: a;
+ justify-self: start;
+ padding: 5px;
+ display:grid;
+ grid-template-columns: repeat(3,1fr);
+ grid-auto-columns: minmax(100px, auto);
+ font-size: larger;
+ border: 1px solid grey;
+} 
+.friends h3{
+  padding: 10px;
+}
+
+.card-body{
+  background-color: whitesmoke;
+  border: 4px solid  black;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+
